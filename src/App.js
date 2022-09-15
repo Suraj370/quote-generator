@@ -5,7 +5,7 @@ import axios from 'axios';
 
 function App() {
   const [quote, setQuote] = useState("");
-  const [author, SetAuthor] = useState("");
+  const [author, setAuthor] = useState("");
 
 const quoteAPI = async() =>{
   let quotelist = [];
@@ -19,7 +19,7 @@ const quoteAPI = async() =>{
   }
   try{
     setQuote(quotelist.content);
-    SetAuthor(quotelist.author);
+    setAuthor(quotelist.author);
 
   }
   catch(err){
